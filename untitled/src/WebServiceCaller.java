@@ -7,6 +7,7 @@ import java.net.URL;
 public class WebServiceCaller {
     public static void main(String[] args) {
         try {
+            Pizza pizza = new Pizza("Meat Lovers", "Medium", "sausage,chicken & beef", 11.25);
             // Specify the URL of the web service
             String url = "http://localhost:8000/hello";
 
