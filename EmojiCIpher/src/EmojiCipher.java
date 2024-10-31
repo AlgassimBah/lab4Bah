@@ -60,13 +60,19 @@ public class EmojiCipher {
         System.out.print("Enter text to encode with emojis: ");
         String inputText = scanner.nextLine();  // User input text
 
-        // Encode the input text using the emoji cipher
-        String encodedText = emojiCipher(inputText);
+        // Special case for "LeBron James"
+        if (inputText.equalsIgnoreCase("LeBron James")) {
+            System.out.println("Encoded text: 👑");
+        } else {
+            // Encode the input text using the emoji cipher
+            String encodedText = emojiCipher(inputText);
 
-        // Display the encoded result
-        System.out.println("Encoded text: " + encodedText);
+            // Display the encoded result
+            System.out.println("Encoded text: " + encodedText);
+        }
 
         scanner.close();  // Close the scanner
     }
 }
+
 
