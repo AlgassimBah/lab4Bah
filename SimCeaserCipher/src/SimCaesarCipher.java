@@ -5,15 +5,15 @@ public class SimCaesarCipher {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Prompt user to enter text for encryption
+        // Makes you pick the text for encryption
         System.out.print("Enter text to encrypt: ");
         String inputText = scanner.nextLine();
 
-        // Prompt user to enter custom shift amount
-        System.out.print("Enter shift amount : ");
+        // Makes you choose the shift amount
+        System.out.print("Enter shift amount: ");
         int shift = scanner.nextInt();
 
-        // Encrypt the input text with your choice of a shift amount
+        // Encrypt the text you choose with your choice of a shift amount
         String encryptedText = encrypt(inputText, shift);
         System.out.println("Encrypted text: " + encryptedText);
 
